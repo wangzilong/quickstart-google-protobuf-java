@@ -1,0 +1,13 @@
+// protoc --python_out=../../../ model.proto
+syntax = "proto2";
+
+message User {
+	required string name = 1;
+	required string email = 2;
+	optional Location location = 3;
+}
+
+message Location {
+	required float longitude = 1;
+	required float latitude = 2;
+}
